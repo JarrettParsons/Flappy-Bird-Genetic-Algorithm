@@ -8,7 +8,7 @@ const h = 565 * 1.3;
 let dude;
 let tube;
 let counter = 1;
-let total = 30; //total number of birds in each generation if it is running slowly then decrease
+let total = 200; //total number of birds in each generation if it is running slowly then decrease
 let birds = [];
 let savedBirds = [];
 let slider;
