@@ -15,8 +15,10 @@ let slider;
 let maxTubes = 0;
 
 function setup() {
-  createCanvas(w, h); //creates the canvas with the given width and height
+  var canvas = createCanvas(w, h); //creates the canvas with the given width and height
+  canvas.parent('sketch-div');
   slider = createSlider(1, 50, 1); //creats the slider that controls the speed of the program
+  slider.parent('slider-div');
   tf.setBackend('cpu'); //sets the backend of the computing to the cpu instead of the GPU or integrated GPU (this makes the program run much faster for me)
   for (let i = 0; i < total; i++) { //appends birds to fill the birds array
     birds[i] = new Bird();
